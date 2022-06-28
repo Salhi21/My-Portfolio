@@ -1,0 +1,58 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container {
+    margin: 3vh;
+}
+
+a {
+    font-family: "Staatliches", cursive;
+    font-size: 7vw;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 white;
+    color: white;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.name:hover {
+    box-shadow: inset 700px 0 0 0 white;
+    color: black;
+}
+
+svg {
+    padding: 5vh;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease-in-out;
+    &:hover {
+        box-shadow: inset 140px 140px 0 0 white;
+        path {
+            fill: black;
+        }
+    }
+}
