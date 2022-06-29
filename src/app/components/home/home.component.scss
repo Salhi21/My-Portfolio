@@ -41,7 +41,8 @@ body {
 }
 
 p,
-a {
+a,
+.rickroll {
     font-family: "Staatliches", cursive;
     font-size: 1.5vw;
     text-decoration: none;
@@ -54,7 +55,7 @@ a {
 
 .name:hover,
 p:hover,
-a:hover {
+.rickroll:hover {
     box-shadow: inset 700px 0 0 0 white;
     color: black;
 }
